@@ -10,7 +10,7 @@ def line_plot(df: pd.DataFrame, region, file_name):
                   marker='o',
                   linewidth=2)
 
-     title = f'Сравнение на температурите (Април/Октомври) на водата в язовири в региона {region} (2003-2025)'
+     title = f'Средни темератури за месеците Април/Октомври в област {region} (2003-2025)'
      plt.title(title, fontsize=16)
      plt.xlabel('Година', fontsize=12)
      plt.ylabel('Температура (°C)', fontsize=12)
@@ -28,7 +28,7 @@ def main():
     city_mapping = {
         'Sofia': 'София',
         'Varna': 'Варна',
-        'Vidin_Montana': 'Видин за Монтана',
+        'Vidin_Montana': 'Монтана',
         'Veliko_Tarnovo': 'Велико Търново',
         'Kardzhali': 'Кърджали'
     }
